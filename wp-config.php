@@ -33,6 +33,9 @@ define('DB_CHARSET', 'utf8');
 /** Cotejamiento de la base de datos. No lo modifiques si tienes dudas. */
 define('DB_COLLATE', '');
 
+//define('WP_SITEURL', 'http://192.168.100.9/grupolarix/');
+//define('WP_HOME', 'http://192.168.100.9/grupolarix');
+
 /**#@+
  * Claves únicas de autentificación.
  *
