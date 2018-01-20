@@ -20,6 +20,24 @@
 <?php endif; ?>
 
 <?php wp_head(); ?>
+
+<style>
+	/*--------------------------------------------------------------
+	Customized styles
+	--------------------------------------------------------------*/
+	.social-container {
+		position: absolute;
+		right: 0;
+		top: 25px;
+		padding-right: 15px;
+	}
+
+	@media only screen and (max-width: 1024px) {
+		.social-container {
+			display: none;
+		}
+	}
+</style>
 </head>
 
 <body <?php body_class(); ?>>
@@ -47,6 +65,20 @@
 					<div class="btn-menu"></div>
 					<nav id="mainnav" class="mainnav" role="navigation">
 						<?php wp_nav_menu( array( 'theme_location' => 'primary', 'fallback_cb' => 'sydney_menu_fallback' ) ); ?>
+						
+						<!-- #Social customized area -->
+						<div class="social-container" style="">
+							<div class="social-inner-container">
+									<ul>
+										<li><a href="https://www.facebook.com/grupolarix/" target="_blank"><span class="fa fa-twitter"></span></a></li>
+										<li><a href="https://www.facebook.com/grupolarix/" target="_blank"><span class="fa fa-facebook"></span></a></li>
+										<li><a href="https://www.facebook.com/grupolarix/" target="_blank"><span class="fa fa-instagram"></span></a></li>
+										<li><a href="https://www.facebook.com/grupolarix/" target="_blank"><span class="fa fa-youtube"></span></a></li>
+									</ul>
+							</div>
+						</div>
+						<!-- #Social customized area -->
+
 					</nav><!-- #site-navigation -->
 				</div>
 				</div>
